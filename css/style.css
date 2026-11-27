@@ -175,15 +175,19 @@ a:hover .link-arrow__txt,
 .bg-light { position: relative; background: var(--c-bg); overflow: hidden; isolation: isolate; }
 
 /* ===== About ===== */
-.about { position: relative; z-index: 2; padding: 220px 0 120px; }
-.about__inner { display: grid; grid-template-columns: 1fr 680px; gap: 60px; align-items: start; }
+.about { position: relative; z-index: 2; padding: 160px 0 80px; }
+/* 左右の余白は三つの強みと同じ（1440px幅で160px） */
+.about__inner { padding-inline: calc(100vw * 160 / 1440); }
+.about__head .sec-label__en { font-size: 15px; letter-spacing: .08em; }
 .about__lead {
   font-family: var(--ff-serif); font-weight: 400;
-  font-size: 38px; letter-spacing: .08em; line-height: 1.5;
-  margin-bottom: 40px; white-space: nowrap;
+  font-size: 40px; line-height: 1.7; letter-spacing: .08em;
+  margin-top: 10px;
 }
-.about__text { font-size: 15px; line-height: 2.1; letter-spacing: .04em; color: var(--c-sub); }
-.about__body .link-arrow { display: flex; width: fit-content; margin: 40px 0 0 auto; font-size: 15px; }
+/* 本文は右寄せ（1440px幅で左端620px／幅660px） */
+.about__body { width: min(660px, 100%); margin: 64px 0 0 auto; }
+.about__text { font-size: 15px; line-height: 2.3; letter-spacing: .04em; color: var(--c-sub); }
+.about__body .link-arrow { display: flex; width: fit-content; margin: 48px 0 0 auto; font-size: 15px; }
 
 
 /* ===== Service ===== */
@@ -427,8 +431,8 @@ a:hover .link-arrow__txt,
   .gnav__list { gap: 24px; }
   .hero__content { left: 48px; }
   .hero__title { font-size: 54px; }
-  .about__inner { grid-template-columns: 1fr 1.6fr; }
-  .about__lead { font-size: 30px; white-space: normal; }
+  .about__inner { padding-inline: var(--gutter); }
+  .about__lead { font-size: 34px; }
   .service__main { column-gap: 32px; }
   .service-row a { grid-template-columns: 180px 1fr; gap: 28px; }
   .advisor__inner { padding: 56px; }
@@ -485,11 +489,13 @@ a:hover .link-arrow__txt,
   }
 
   /* About */
-  .about { padding: 90px 0 60px; }
-  .about__inner { grid-template-columns: minmax(0, 1fr); gap: 40px; }
-  .about__lead { font-size: 25px; margin-bottom: 24px; white-space: normal; }
-  .about__text { font-size: 15px; }
-  .about__body .link-arrow { margin-top: 40px; }
+  .about { padding: 90px 0 72px; }
+  .about__inner { padding-inline: var(--gutter); }
+  .about__head .sec-label__en { font-size: 13px; }
+  .about__lead { font-size: 27px; }
+  .about__body { width: auto; margin-top: 32px; }
+  .about__text { font-size: 15px; line-height: 2.1; }
+  .about__body .link-arrow { margin-top: 36px; }
 
 
   /* Service */
