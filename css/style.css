@@ -381,10 +381,10 @@ a:hover .link-arrow__txt,
 /* ===== Column ===== */
 .column { padding-bottom: 150px; }
 .column__inner { display: grid; grid-template-columns: 240px 1fr; gap: 60px; align-items: start; }
-.column__list { border-top: 1px solid var(--c-line); }
+.column__list { border-top: 1px solid var(--c-line); margin-inline: -16px; }  /* ホバーの背景を左右に少し広げる分、線も同じ幅に */
 .column__list a {
   display: grid; grid-template-columns: 82px 1fr auto; gap: 24px; align-items: center;
-  padding: 30px 16px 32px; margin-inline: -16px;  /* ホバーの背景を左右に少し広げる */
+  padding: 30px 16px 32px;
   border-bottom: 1px solid var(--c-line);
   font-size: 13px; letter-spacing: .03em;
   transition: background-color .3s;
@@ -542,7 +542,8 @@ a:hover .link-arrow__txt,
   /* Column */
   .column { padding-bottom: 90px; }
   .column__inner { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .column__list a { grid-template-columns: 1fr auto; row-gap: 6px; padding: 22px 12px; margin-inline: -12px; }
+  .column__list { margin-inline: -12px; }
+  .column__list a { grid-template-columns: 1fr auto; row-gap: 6px; padding: 22px 12px; }
   .column__list time { grid-column: 1 / -1; }
   .column__title { white-space: normal; font-size: 14px; }
 
