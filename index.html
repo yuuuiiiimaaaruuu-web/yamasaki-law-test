@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow"><!-- テスト公開用：本番公開時に削除 -->
+  <title>山﨑国際法律事務所</title>
+  <meta name="description" content="企業の成長や挑戦を、法律の立場から支える法律パートナー。一般企業法務・国際取引・M&Aに対応する山﨑国際法律事務所。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+JP:wght@400;500&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <!-- ロゴマーク（仮）：正式なロゴデータが届いたら差し替え -->
+        <svg class="header__mark" viewBox="0 0 20 24" aria-hidden="true"><path d="M2 2v20M2 2h4M2 22h4M18 2v20M18 2h-4M18 22h-4M10 5v14" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>山﨑国際法律事務所</span>
+      </a>
+      <nav class="gnav" id="gnav" aria-label="メインメニュー">
+        <ul class="gnav__list">
+          <li><a href="#about">事務所案内</a></li>
+          <li><a href="#service">取扱業務</a></li>
+          <li><a href="#advisor">顧問弁護士</a></li>
+          <li><a href="#column">コラム</a></li>
+          <li class="gnav__contact"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero (video) ===== -->
+    <section class="hero">
+      <div class="hero__media">
+        <!-- 画面幅に応じて js/main.js が PC用（ヨコ）/ SP用（タテ）動画を読み込みます -->
+        <video class="hero__video" id="heroVideo"
+               autoplay muted loop playsinline preload="auto"
+               data-src-pc="video/hero-pc.mp4" data-src-sp="video/hero-sp.mp4"
+               data-poster-pc="images/hero-poster-pc.jpg" data-poster-sp="images/hero-poster-sp.jpg">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__en">Law on your side,<br class="sp-only"> right where your business is.</p>
+        <h1 class="hero__title">事業のそばに、<br>法の力を</h1>
+        <ul class="hero__tags">
+          <li><a href="#service">一般企業法務</a></li>
+          <li><a href="#service">国際取引</a></li>
+          <li><a href="#service">M&amp;A</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bg-light">
+      <div class="streaks streaks--about" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- ===== About ===== -->
+      <section class="about" id="about">
+        <div class="container about__inner">
+          <div class="sec-label">
+            <p class="sec-label__en">About</p>
+            <h2 class="sec-label__ja">事務所について</h2>
+          </div>
+          <div class="about__body">
+            <p class="about__lead">予防から推進まで、<br class="sp-only">法律で支える</p>
+            <p class="about__text">山﨑国際法律事務所は、企業の成長や挑戦を、法律の立場から支える法律パートナーです。社内弁護士として企業の法務を内側から担った経験をもとに、お客様の事業と思いを理解し、争いが起きる前の備えから、事業を前へ進める道筋まで、共に考えます。</p>
+            <a href="#" class="link-arrow">事務所について<span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Service ===== -->
+      <section class="service" id="service">
+        <div class="container">
+          <div class="sec-head">
+            <p class="sec-head__en">Service</p>
+            <h2 class="sec-head__ja">取扱業務</h2>
+          </div>
+
+          <ul class="service__main">
+            <li class="service-card">
+              <a href="#">
+                <figure class="service-card__img"><img src="images/service-01.jpg" alt="" loading="lazy" width="378" height="282"></figure>
+                <div class="service-card__head"><h3 class="service-card__title">一般企業法務</h3><span class="arrow arrow--btn" aria-hidden="true"></span></div>
+                <p class="service-card__text">契約書の作成・確認、社内規程の整備、会社運営の手続きなど、日々の法務と将来の紛争防止を、経営を支える視点でサポートします。</p>
+              </a>
+            </li>
+            <li class="service-card">
+              <a href="#">
+                <figure class="service-card__img"><img src="images/service-02.jpg" alt="" loading="lazy" width="378" height="282"></figure>
+                <div class="service-card__head"><h3 class="service-card__title">国際取引</h3><span class="arrow arrow--btn" aria-hidden="true"></span></div>
+                <p class="service-card__text">英文契約書の作成・確認や海外取引先との交渉など、海外との取引を、契約の段階からリスクを見据え、進めるべき道筋を示します。</p>
+              </a>
+            </li>
+            <li class="service-card">
+              <a href="#">
+                <figure class="service-card__img"><img src="images/service-03.jpg" alt="" loading="lazy" width="378" height="282"></figure>
+                <div class="service-card__head"><h3 class="service-card__title">M&amp;A</h3><span class="arrow arrow--btn" aria-hidden="true"></span></div>
+                <p class="service-card__text">基本合意書の確認、法務デューデリジェンス、最終契約の交渉など、買い手・売り手の双方で、M&amp;Aの法務を一貫して支えます。</p>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="service__sub">
+            <li class="service-row">
+              <a href="#">
+                <figure class="service-row__img"><img src="images/service-04.jpg" alt="" loading="lazy" width="256" height="177"></figure>
+                <div class="service-row__body">
+                  <h3 class="service-row__title">観光法務</h3>
+                  <p class="service-row__text">旅行業法の相談から、日英の規約作成など、観光事業の法務をサポートします。</p>
+                  <span class="arrow arrow--btn" aria-hidden="true"></span>
+                </div>
+              </a>
+            </li>
+            <li class="service-row">
+              <a href="#">
+                <figure class="service-row__img"><img src="images/service-05.jpg" alt="" loading="lazy" width="256" height="177"></figure>
+                <div class="service-row__body">
+                  <h3 class="service-row__title">相続・事業承継</h3>
+                  <p class="service-row__text">相続放棄、国際相続、事業承継など、個人から経営者まで対応します。</p>
+                  <span class="arrow arrow--btn" aria-hidden="true"></span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <!-- 顧問弁護士 -->
+          <a href="#" class="advisor" id="advisor">
+            <img class="advisor__bg" src="images/advisor.jpg" alt="" loading="lazy" width="1920" height="746">
+            <div class="advisor__inner">
+              <div class="advisor__head">
+                <p class="advisor__en">Service</p>
+                <h2 class="advisor__title">経営の判断を、<br>継続して支える<br class="sp-only">顧問弁護士</h2>
+              </div>
+              <p class="advisor__text">企業の発展のために、日々のご相談から経営判断まで、<br class="pc-only">法的・実務的な視点で寄り添います。</p>
+              <span class="link-arrow link-arrow--white">顧問弁護士について<span class="arrow" aria-hidden="true"></span></span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Strength ===== -->
+    <!-- スクロールに合わせて 01→02→03 と切り替わる（画面に固定して表示） -->
+    <section class="strength" id="strength">
+      <!-- 背景：画面全体に固定 -->
+      <div class="strength__bgs" aria-hidden="true">
+        <img src="images/strength-bg-01.jpg" alt="" class="is-active" width="1280" height="754">
+        <img src="images/strength-bg-02.jpg" alt="" width="1280" height="754" loading="lazy">
+        <img src="images/strength-bg-03.jpg" alt="" width="1280" height="754" loading="lazy">
+      </div>
+      <!-- 中身：ヘッダーの下10pxに固定 -->
+      <div class="strength__sticky">
+
+        <div class="container strength__container">
+          <div class="sec-label sec-label--white">
+            <p class="sec-label__en">Strength</p>
+            <h2 class="sec-label__ja">三つの強み</h2>
+          </div>
+
+          <div class="strength__inner">
+            <div class="strength__visual">
+              <div class="strength__photos">
+                <img src="images/strength-01.jpg" alt="相談者の話に耳を傾けながら説明する山﨑弁護士" class="is-active" width="824" height="958">
+                <img src="images/strength-02.jpg" alt="契約書を確認する手元" width="824" height="958" loading="lazy">
+                <img src="images/strength-03.jpg" alt="書棚から書籍を取り出す手元" width="824" height="958" loading="lazy">
+              </div>
+              <p class="strength__num" aria-hidden="true"><span id="strengthNum">01</span></p>
+            </div>
+
+            <ol class="strength__list" id="strengthList">
+              <li class="strength-item is-active">
+                <button type="button" class="strength-item__head" aria-current="true">
+                  <span class="sr-only">01</span>事業目線の提案
+                </button>
+                <div class="strength-item__body"><div class="strength-item__clip"><p class="strength-item__text">法律とビジネスの両面から、事業の判断に向き合ってきた社内弁護士の経験をもとに、事業の事情を整理し、次の一手を一緒に考えます。</p></div></div>
+              </li>
+              <li class="strength-item">
+                <button type="button" class="strength-item__head">
+                  <span class="sr-only">02</span>紛争予防という視点
+                </button>
+                <div class="strength-item__body"><div class="strength-item__clip"><p class="strength-item__text">判断や契約を進める前に、起こりうる問題を、一緒に確認します。今取り組むべきことと、将来のリスクを、あわせてお伝えします。</p></div></div>
+              </li>
+              <li class="strength-item">
+                <button type="button" class="strength-item__head">
+                  <span class="sr-only">03</span>海外案件への対応実績
+                </button>
+                <div class="strength-item__body"><div class="strength-item__clip"><!-- ※デザインの文章が01と同じため仮。正式な文章に差し替え -->
+                  <p class="strength-item__text">法律とビジネスの両面から、事業の判断に向き合ってきた社内弁護士の経験をもとに、事業の事情を整理し、次の一手を一緒に考えます。</p></div></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-light">
+      <!-- ===== Voice ===== -->
+      <section class="voice" id="voice">
+        <div class="voice__inner">
+          <div class="voice__text-area">
+            <div class="sec-label">
+              <p class="sec-label__en">Client Voices</p>
+              <h2 class="sec-label__ja">顧問先の声</h2>
+            </div>
+            <p class="voice__text">実際にご相談いただいた<br class="pc-only">顧問先の声を掲載しています。</p>
+            <a href="#" class="link-arrow">一覧を見る<span class="arrow arrow--btn" aria-hidden="true"></span></a>
+          </div>
+          <figure class="voice__img"><img src="images/voice.jpg" alt="書棚の前で顧問先と対談する山﨑弁護士" loading="lazy" width="1754" height="976"></figure>
+        </div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section class="contact-sec" id="contact">
+        <div class="container">
+          <div class="contact">
+            <div class="streaks streaks--contact" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="contact__inner">
+              <p class="contact__en">Contact</p>
+              <h2 class="contact__title">お問い合わせ</h2>
+              <p class="contact__text">まずは、ご状況をお聞かせください。<br>課題の整理から、解決案のご提案まで対応します。<br>Web相談で、全国から承ります。</p>
+              <a href="#" class="contact__btn">お問い合わせフォーム</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Column ===== -->
+      <section class="column" id="column">
+        <div class="container column__inner">
+          <div class="sec-label">
+            <p class="sec-label__en">Column</p>
+            <h2 class="sec-label__ja">コラム</h2>
+          </div>
+          <div class="column__body">
+            <ul class="column__list">
+              <li><a href="#"><time datetime="2000-01-01">2000.01.01</time><span class="column__title">記事のタイトルが入ります記事のタイトルが入ります</span><span class="arrow" aria-hidden="true"></span></a></li>
+              <li><a href="#"><time datetime="2000-01-01">2000.01.01</time><span class="column__title">記事のタイトルが入ります記事のタイトルが入ります</span><span class="arrow" aria-hidden="true"></span></a></li>
+              <li><a href="#"><time datetime="2000-01-01">2000.01.01</time><span class="column__title">記事のタイトルが入ります記事のタイトルが入ります</span><span class="arrow" aria-hidden="true"></span></a></li>
+            </ul>
+            <a href="#" class="link-arrow column__more">一覧を見る<span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__info">
+        <a href="/" class="footer__logo">
+          <svg class="header__mark" viewBox="0 0 20 24" aria-hidden="true"><path d="M2 2v20M2 2h4M2 22h4M18 2v20M18 2h-4M18 22h-4M10 5v14" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>山﨑国際法律事務所</span>
+        </a>
+        <!-- ※住所はデザインから読み取ったもの。要確認 -->
+        <address class="footer__address">〒603-8151<br>京都市北区小山下総町53-9 コルネリオビル2階</address>
+      </div>
+      <nav class="footer__nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="#about">事務所案内</a></li>
+          <li><a href="#service">取扱業務</a>
+            <ul class="footer__sub">
+              <li><a href="#">一般企業法務</a></li>
+              <li><a href="#">国際取引</a></li>
+              <li><a href="#">M&amp;A</a></li>
+              <li><a href="#">観光法務</a></li>
+              <li><a href="#">相続・事業承継</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#advisor">顧問弁護士</a></li>
+          <li><a href="#voice">ご依頼者の声</a></li>
+          <li><a href="#column">コラム</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li class="footer__privacy"><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container"><p class="footer__copy"><small>&copy; 山﨑国際法律事務所</small></p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
