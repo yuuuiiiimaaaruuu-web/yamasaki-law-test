@@ -389,7 +389,7 @@ a:hover .link-arrow__txt,
   font-size: 13px; letter-spacing: .03em;
   transition: background-color .3s;
 }
-.column__list a:hover { background-color: #ededed; }
+.column__list a:hover { background-color: #f1f0ec; }
 .column__list time { font-family: var(--ff-en); font-size: 11px; color: var(--c-gray); }
 .column__title { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .column__more { display: flex; width: fit-content; margin: 36px 0 0 auto; font-size: 13px; }
