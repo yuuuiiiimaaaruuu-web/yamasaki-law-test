@@ -5,7 +5,7 @@
 
   // スクロールでヘッダー背景を付ける
   const onScroll = () => {
-    header.classList.toggle('is-scrolled', window.scrollY > 80);
+    header.classList.toggle('is-scrolled', window.scrollY > 80 || header.hasAttribute('data-solid'));
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
