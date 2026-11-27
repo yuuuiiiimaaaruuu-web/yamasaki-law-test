@@ -359,9 +359,9 @@ a:hover .link-arrow__txt,
   background: linear-gradient(110deg, #04312f 0%, #08413c 45%, #0f5a4e 100%);
   text-align: center;
 }
-.contact__inner { padding: 88px 40px 116px; }
+.contact__inner { padding: 80px 40px 80px; }
 .contact__en { font-family: var(--ff-en); font-size: 15px; letter-spacing: .06em; }
-.contact__title { font-family: var(--ff-serif); font-weight: 400; font-size: 38px; letter-spacing: .08em; margin: 10px 0 64px; }
+.contact__title { font-family: var(--ff-serif); font-weight: 400; font-size: 38px; letter-spacing: .08em; margin: 0 0 48px; }
 .contact__text { font-size: 16px; font-weight: 500; line-height: 1.75; letter-spacing: .04em; }
 .contact__btn {
   display: flex; align-items: center; justify-content: space-between;
