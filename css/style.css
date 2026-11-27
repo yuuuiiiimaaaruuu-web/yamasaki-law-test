@@ -273,10 +273,7 @@ a:hover .link-arrow__txt,
   transition: opacity 1s ease, transform 1.6s ease;
 }
 .strength__bgs img.is-active { opacity: 1; transform: scale(1); }
-.strength__bgs::after {  /* 文字を読みやすくするための薄い影 */
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(6,28,30,.35) 0%, rgba(6,28,30,.15) 50%, rgba(6,28,30,.3) 100%);
-}
+/* 背景画像はあらかじめ暗く調整済みのため、重ねる影はなし */
 .strength__sticky {
   position: sticky; top: 0; z-index: 1;
   padding: var(--pad) 0;  /* 上下とも104px（SPは64px） */
