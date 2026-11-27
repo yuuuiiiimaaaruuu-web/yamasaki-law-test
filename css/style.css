@@ -279,7 +279,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 }
 .strength__sticky {
   position: sticky; top: 0; z-index: 1;
-  padding: calc(var(--head) + var(--pad)) 0 var(--pad);  /* 上：ヘッダーの下から104px／下：104px（SPは64px） */
+  padding: var(--pad) 0;  /* 上下とも104px（SPは64px） */
 }
 /* 左右の余白：1440px幅で160px（＝画面幅の約11.1%）にして中央に配置 */
 .strength__container {
@@ -293,8 +293,8 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .strength__visual { position: relative; width: fit-content; }
 .strength__photos {
   position: relative; overflow: hidden;
-  /* 基本は 412×479px。画面が低いときだけ、見出しと下の104pxが収まるよう縮める */
-  height: clamp(320px, calc(100svh - 445px), 479px);
+  /* 上下の余白がどちらも104pxになるよう、画面の高さに合わせて写真の高さを決める */
+  height: clamp(320px, calc(100svh - 358px), 600px);
   aspect-ratio: 824 / 958;
 }
 .strength__photos img {
@@ -519,7 +519,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .service-card__text, .service-row__text { font-size: 14px; }
   .service__sub { grid-template-columns: minmax(0, 1fr); }
   .service__sub { row-gap: 32px; margin-top: 48px; }
-  .service-row a { grid-template-columns: 136px 1fr; gap: 18px; }
+  .service-row a { grid-template-columns: 136px 1fr; gap: 18px; align-items: start; }  /* 画像とタイトルを上揃え */
   .service-row__title { font-size: 18px; margin-bottom: 8px; }
   .service-row__text { font-size: 13px; line-height: 1.8; margin-bottom: 10px; }
 
@@ -534,7 +534,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .strength { --head: 64px; --pad: 64px; }
   .strength__container { padding-inline: var(--gutter); }
   .strength__inner { grid-template-columns: minmax(0, 1fr); gap: 40px; margin-top: 24px; }
-  .strength__photos { height: clamp(150px, calc(100svh - 610px), 279px); }
+  .strength__photos { height: clamp(150px, calc(100svh - 540px), 340px); }
   .strength__num { right: -24px; bottom: -22px; font-size: 52px; }
   .strength-item { padding: 18px 0; }
   .strength-item__head { font-size: 19px; }
