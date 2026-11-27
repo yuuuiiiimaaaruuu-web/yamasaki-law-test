@@ -69,7 +69,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 /* 矢印はSVGで描画。ホバーで矢印が右へ抜け、左から戻ってくる */
 .arrow {
   flex: none; position: relative; display: inline-block; overflow: hidden;
-  width: 53px; height: 24px; border-radius: 1px;
+  width: 52px; height: 24px; border-radius: 1px;
   background: var(--c-green);
 }
 .arrow::before {
@@ -371,7 +371,12 @@ a:hover .link-arrow__txt,
   font-size: 16px; font-weight: 500; letter-spacing: .04em;
   border-radius: 1px;
 }
-.contact__btn .arrow { width: 56px; height: 26px; }
+.contact__btn .arrow { pointer-events: none; }
+/* お問い合わせボタン：ホバーは背景色のみ（矢印の動き・下線なし） */
+.contact__btn { transition: background-color .3s; }
+.contact__btn:hover { background: #abc3bf; }
+.contact__btn:hover .arrow::before { animation: none; }
+.contact__btn:hover .link-arrow__txt { background-size: 0 1px; }
 
 /* ===== Column ===== */
 .column { padding-bottom: 150px; }
@@ -386,7 +391,6 @@ a:hover .link-arrow__txt,
 .column__list a:hover { background-color: #ededed; }
 .column__list time { font-family: var(--ff-en); font-size: 11px; color: var(--c-gray); }
 .column__title { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.column__list .arrow, .column__more .arrow { width: 24px; height: 14px; background-size: 10px 6px; }
 .column__more { display: flex; width: fit-content; margin: 36px 0 0 auto; font-size: 13px; }
 
 /* ===== Footer ===== */
@@ -487,7 +491,6 @@ a:hover .link-arrow__txt,
   .about__text { font-size: 15px; }
   .about__body .link-arrow { margin-top: 40px; }
 
-  .arrow { width: 44px; height: 22px; }
 
   /* Service */
   .service { padding: 60px 0 80px; }
@@ -649,4 +652,29 @@ a:hover .link-arrow__txt,
   .btn-submit, .btn-back { width: 100%; }
   .confirm__row { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
   .done__title { font-size: 22px; }
+}
+
+/* =========================================================
+   下層ページ：取扱業務一覧
+   ========================================================= */
+.svc-sec { max-width: calc(1080px + var(--gutter) * 2); margin-inline: auto; padding: 128px var(--gutter) 160px; }
+.svc-list { display: grid; gap: 120px; }
+.svc { display: grid; grid-template-columns: minmax(0, 507fr) minmax(0, 520fr); gap: 72px; align-items: center; scroll-margin-top: 120px; }
+.svc__img { overflow: hidden; aspect-ratio: 4 / 3; background: #ddd; }
+.svc__img img { width: 100%; height: 100%; object-fit: cover; }
+.svc__title { font-family: var(--ff-serif); font-weight: 400; font-size: 38px; line-height: 1.4; letter-spacing: .04em; }
+.svc__en { font-family: var(--ff-en); font-size: 15px; letter-spacing: .02em; margin-top: 10px; }
+.svc__text { font-size: 15px; line-height: 1.9; letter-spacing: .03em; margin-top: 48px; }
+.svc .link-arrow { margin-top: 40px; }
+.page-service .contact-sec { padding-bottom: 130px; }
+
+@media (max-width: 767px) {
+  .svc-sec { padding: 64px var(--gutter) 96px; }
+  .svc-list { gap: 72px; }
+  .svc { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .svc__title { font-size: 28px; }
+  .svc__en { font-size: 13px; margin-top: 6px; }
+  .svc__text { font-size: 14px; margin-top: 24px; }
+  .svc .link-arrow { margin-top: 28px; }
+  .page-service .contact-sec { padding-bottom: 80px; }
 }
