@@ -311,9 +311,13 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .strength__num span { display: inline-block; transition: opacity .4s, transform .4s; }
 .strength__num.is-changing span { opacity: 0; transform: translateY(12px); }
 
-.strength__list { border-top: 1px solid rgba(255,255,255,.7); }
-.strength-item { padding: 28px 0; }  /* 上下の余白をそろえる */
-.strength-item + .strength-item { border-top: 1px solid rgba(255,255,255,.4); }
+/* 各項目の上の線：選ばれている項目の線だけ100%（白）、ほかは薄く */
+.strength-item {
+  padding: 28px 0;  /* 上下の余白をそろえる */
+  border-top: 1px solid rgba(255,255,255,.3);
+  transition: border-color .5s;
+}
+.strength-item.is-active { border-top-color: #fff; }
 .strength-item__head {
   display: block; width: 100%; text-align: left;
   font-family: var(--ff-serif); font-size: 25px; letter-spacing: .06em; line-height: 1.5;
