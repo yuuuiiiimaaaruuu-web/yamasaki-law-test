@@ -381,6 +381,7 @@ a:hover .link-arrow__txt,
 /* ===== Column ===== */
 .column { padding-bottom: 150px; }
 .column__inner { display: grid; grid-template-columns: 240px 1fr; gap: 60px; align-items: start; }
+.column__list { border-top: 1px solid var(--c-line); }
 .column__list a {
   display: grid; grid-template-columns: 82px 1fr auto; gap: 24px; align-items: center;
   padding: 30px 16px 32px; margin-inline: -16px;  /* ホバーの背景を左右に少し広げる */
