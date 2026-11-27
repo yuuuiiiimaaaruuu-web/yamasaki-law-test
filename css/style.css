@@ -127,7 +127,6 @@ a:hover .link-arrow__txt,
 .header.is-scrolled {
   background: var(--c-bg);
   color: var(--c-text);
-  box-shadow: 0 1px 0 rgba(0,0,0,.05);
 }
 .header.is-scrolled .gnav__contact a { background: var(--c-green); color: var(--c-white); }
 .hamburger { display: none; }
