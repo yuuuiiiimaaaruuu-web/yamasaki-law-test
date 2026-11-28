@@ -174,7 +174,7 @@ a:hover .link-arrow__txt,
 .bg-light { position: relative; background: var(--c-bg); overflow: hidden; isolation: isolate; }
 
 /* ===== About ===== */
-.about { position: relative; z-index: 2; padding: 160px 0 80px; }
+.about { position: relative; z-index: 2; padding: 160px 0 0; }
 /* 左右の余白は三つの強みと同じ（1440px幅で160px） */
 .about__inner { padding-inline: calc(100vw * 160 / 1440); }
 .about__head .sec-label__en { font-size: 15px; letter-spacing: .08em; }
