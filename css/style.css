@@ -537,7 +537,8 @@ a:hover .link-arrow__txt,
   .contact-sec { padding-bottom: 80px; }
   .contact__inner { padding: 56px 20px 56px; }
   .contact__title { font-size: 28px; margin-bottom: 32px; }
-  .contact__text { font-size: 14px; }
+  .contact__text { font-size: 14px; text-align: left; }
+  .contact__text br { display: none; }  /* SPは改行せず、文章を流して読みやすく */
   .contact__btn { width: 100%; height: 58px; margin-top: 36px; padding: 0 16px 0 20px; font-size: 15px; }
 
   /* Column */
