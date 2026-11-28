@@ -684,3 +684,9 @@ a:hover .link-arrow__txt,
   .svc .link-arrow { margin-top: 28px; }
   .page-service .contact-sec { padding-bottom: 80px; }
 }
+
+/* SP：矢印ボタンは 40×20px、矢印の長さ12px */
+@media (max-width: 767px) {
+  .arrow { width: 40px; height: 20px; }
+  .arrow::before { background-size: 12px 7px; }
+}
