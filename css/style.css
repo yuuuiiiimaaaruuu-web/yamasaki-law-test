@@ -486,7 +486,7 @@ a:hover .link-arrow__txt,
   }
 
   /* About */
-  .about { padding: 90px 0 72px; }
+  .about { padding: 90px 0 104px; }
   .about__inner { padding-inline: var(--gutter); }
   .about__head .sec-label__en { font-size: 13px; }
   .about__lead { font-size: 27px; }
@@ -496,7 +496,7 @@ a:hover .link-arrow__txt,
 
 
   /* Service */
-  .service { padding: 60px 0 80px; }
+  .service { padding: 0 0 80px; }
   .service__main { grid-template-columns: minmax(0, 1fr); }
   .service__main { row-gap: 48px; }
   .service-card__head { margin: 22px 0 12px; }
@@ -508,12 +508,13 @@ a:hover .link-arrow__txt,
   .service-row__title { font-size: 18px; margin-bottom: 8px; }
   .service-row__text { font-size: 13px; line-height: 1.8; margin-bottom: 10px; }
 
-  .advisor { margin-top: 80px; aspect-ratio: auto; }
-  .advisor__bg { object-position: 70% center; }
-  .advisor::after { background: linear-gradient(0deg, rgba(8,25,25,.6) 0%, rgba(8,25,25,.2) 100%); }
-  .advisor__inner { padding: 48px 24px 40px; grid-template-columns: 1fr; row-gap: 0; }
-  .advisor__title { font-size: 23px; margin-bottom: 100px; }
-  .advisor .link-arrow { margin-top: 24px; }
+  .advisor { margin-top: 80px; aspect-ratio: 800 / 1142; }
+  .advisor__bg { object-position: center; }
+  .advisor::after { background: linear-gradient(180deg, rgba(8,25,25,.35) 0%, rgba(8,25,25,0) 45%); }
+  .advisor__inner { padding: 40px 24px 36px; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto auto; row-gap: 0; }
+  .advisor__title { font-size: 23px; }
+  .advisor__text { grid-row: 3; }
+  .advisor .link-arrow { grid-row: 4; margin-top: 24px; justify-self: start; }
 
   /* Strength */
   .strength { --head: 64px; --pad: 64px; }
